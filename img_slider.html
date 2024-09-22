@@ -50,12 +50,14 @@
 		
 		var i = 0;
 		function slider() {
-			if(i >= 6)i=0; //i exceed more than 6 reset to 0
-			//hide all  the images
+			if(i >= 6){
+				i=0;
+			}
+			
 			for(j = 0; j <= 6; j++) {
 				data[j].style.display = "none";
 			}
-			// show only particular image
+			
 			data[i].style.display = "block";
 			i++;
 		}
